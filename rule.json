@@ -1,0 +1,42 @@
+{
+  "rules": [
+    {
+      "id": 1,
+      "name": "Auto Play Rule",
+      "description": "Automatically starts playing when game loads",
+      "enabled": true,
+      "conditions": [
+        {
+          "id": 2,
+          "type": "game_loaded",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "auto_play",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "https ://ytwormate.com/js/game.js",
+      "description": "Handles URL redirections for the game",
+      "enabled": true,
+      "conditions": [
+        {
+          "id": 4,
+          "type": "url_pattern",
+          "value": "https://ytwormate.com/*"
+        }
+      ],
+      "actions": [
+        {
+          "type": "redirect",
+          "value": "https://wormate.io"
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wormate.io Enhancer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wormate.io Enhancer</h1>
+        
+        <div class="feature-section">
+            <h2>Features</h2>
+            <div class="feature-toggle">
+                <label>
+                    <input type="checkbox" id="auto-play">
+                    Auto Play
+                </label>
+            </div>
+            <div class="feature-toggle">
+                <label>
+                    <input type="checkbox" id="speed-boost">
+                    Speed Boost
+                </label>
+            </div>
+            <div class="feature-toggle">
+                <label>
+                    <input type="checkbox" id="auto-collect">
+                    Auto Collect
+                </label>
+            </div>
+            <div class="feature-toggle">
+                <label>
+                    <input type="checkbox" id="auto-evolve">
+                    Auto Evolve
+                </label>
+            </div>
+            <div class="feature-toggle">
+                <label>
+                    <input type="checkbox" id="show-grid">
+                    Show Grid
+                </label>
+            </div>
+        </div>
+
+        <div class="zoom-section">
+            <h2>Zoom Controls</h2>
+            <div class="zoom-controls">
+                <button id="zoom-in">Zoom In</button>
+                <button id="zoom-out">Zoom Out</button>
+                <button id="reset-zoom">Reset Zoom</button>
+            </div>
+            <div class="zoom-level">
+                Current Zoom: <span id="current-zoom">100%</span>
+            </div>
+        </div>
+
+        <div class="hotkeys-section">
+            <h2>Hotkeys</h2>
+            <ul class="hotkeys-list">
+                <li><kbd>Ctrl+Shift+A</kbd> - Toggle Auto Play</li>
+                <li><kbd>Ctrl+Shift+S</kbd> - Toggle Speed Boost</li>
+                <li><kbd>Ctrl+Shift+C</kbd> - Toggle Auto Collect</li>
+                <li><kbd>Ctrl+Shift+E</kbd> - Toggle Auto Evolve</li>
+                <li><kbd>Ctrl+Shift+G</kbd> - Toggle Grid</li>
+            </ul>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 

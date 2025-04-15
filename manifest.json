@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Wormate.io Enhancer",
+  "version": "1.0",
+  "description": "Enhance your Wormate.io gaming experience with additional features and controls",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://wormate.io/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://wormate.io/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-auto-play": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A"
+      },
+      "description": "Toggle Auto Play"
+    },
+    "toggle-speed-boost": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Toggle Speed Boost"
+    }
+  }
+} 
